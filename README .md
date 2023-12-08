@@ -1,7 +1,7 @@
 # Stock-market-prediction
 Its a hybrid model consisting of a CNN model to get the sentimet index. Then, a LSTM model to get the final predicted values.  
 To get the sentiment data , I used the GDLET Project API to get the news headlines from moneyControl, Financial Express and economic times.  
-Uisng word tokenizer and Wor2Vec , each of the headlines were converted into a vector of size 100. The choice of vector size as 100 is used as previously some research indicated that vector size of 100 to 300
+Using word tokenizer and Wor2Vec , each of the headlines were converted into a vector of size 100. The choice of vector size as 100 is used as previously some research indicated that vector size of 100 to 300
 gave better results.Each sentence of n words is considered as a 2D Matrix of dimension n x k. The lenght of n in our case is
 20 and k is 100.The CNN model has 3 convolution layers, Max Pooling layer and 2 fully connected layer.
 CNN Model
